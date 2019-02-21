@@ -1,0 +1,660 @@
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑",Arial;
+    color: #333;
+
+}
+html{
+     overflow-x: hidden; overflow-y: auto;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+i{
+    font-style: normal;
+}
+.header_logo{
+	height: 80px;
+	background: #000;
+	position: relative;
+}
+.logo{
+    width: 163px;
+    height: 21.59px;
+    position: absolute;
+    top: 25%;
+    background: url(../img/header-footer-new3.png) 0 0 no-repeat transparent;
+    font-size: inherit;
+	margin-left: 66px;
+	margin-top: 10px;
+}
+.logo_right{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.denglu{
+	/*background: blue;*/
+	height:80px;
+	width:120px;
+	/*margin-right: 550px;*/
+	
+}
+.denglu_tit{
+	width:100px;
+	font-size: 12px;
+	color: #fff;
+}
+.denglu_tit a{
+	font-size: 12px;
+	color: #fff;
+}
+.denglu_tit .a2{
+	margin-left: 6px;
+}
+.denglu_tit .a1{
+	margin-right: 6px;
+}
+.pic{
+	width:30px;
+	height:31px;
+}
+.denglu_pic{
+	width:36px;
+	height:31px;
+	background: url(../img/sprites_header_footer.png) no-repeat -95px -85px;
+}
+.denglu_pic:hover{
+	background-position:  -136px -66px;
+
+}
+.gouwu{
+	width: 116px;
+	height: 80px;
+	
+}
+
+.gouwu_pic{
+	background: url(../img/sprites_header_footer.png) no-repeat -168px -97px;
+
+}
+
+.gouwu_tit {
+	width:50px;
+	color: #fff;
+	font-size: 12px;
+	padding-left: 37px;
+}
+.char_pic{
+
+	background: url(../img/sprites_header_footer.png) no-repeat -95px -54px;
+	margin-left: 50px;
+}
+.char_pic:hover{
+	background-position:  -136px -33px;
+
+}
+.sousuo_pic{
+	background: url(../img/sprites_header_footer.png) no-repeat -137px -162px;
+	margin-left: 61px;
+}
+.sousuo_pic:hover{
+	background-position:  -136px -1px;
+
+}
+.help_pic{
+	background: url(../img/sprites_header_footer.png) no-repeat -169px -162px;
+	margin-left: 61px;
+	margin-right: 60px;
+}
+.help_pic:hover{
+	background-position:  -167px -1px;
+
+}
+
+/*导航*/
+.nav{
+	height:50px;
+	background:#464646;
+}
+.uls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.uls li{
+	width: 150px;
+	height:50px;
+	position: relative;
+}
+.uls li a{
+	box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 35px;
+    padding-left: 58px;
+ 
+}
+.uls .tit1{
+	padding-left: 41px;
+}
+.uls .tit2{
+	padding-left: 31px;
+}
+.uls li p{
+    border-color: white transparent transparent;
+    border-right: 6px solid transparent;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    width: 0;
+    margin-left: -6px;
+    height: 0;
+    left: 50%;
+    bottom: 6px;
+}
+
+
+/*登录*/
+.header-expanded{
+	width: 100%;
+	height: 397px;
+    z-index: 101;
+    background-color: #FFF;
+    position: relative;
+}
+.header-expanded-content{
+	width: 1000px;
+	height: 317px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+    margin:auto;
+    /*background: #abcdef;*/
+}
+
+.three_one{
+    width: 15%;
+    height: 100%;
+    float:left;
+	/*background: red;*/
+}
+.three_one p{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+.three_one .button{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.three_one .button i{
+    background: url(../img/sprites_header_footer.png) no-repeat scroll -10px -164px transparent;
+    width: 15px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+.three_one .button:hover {
+    -webkit-transition-duration: .3s;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #999;
+}
+.three_one .button:hover i{
+    -webkit-transition-duration: .3s;
+    background-position: -43px -164px;
+}
+.three_two{
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    margin: 0 6%;
+    padding: 0 6%;
+    float:left;
+
+}
+.three_two dt{
+	font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+.three_two dd{
+	width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 12px 12px 0;
+}
+.three_two dd a{
+    display: block;
+    background-image: url(../img/shareimg.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-indent: -1000em;
+}
+.three_two .pic_2 a{
+	background-position: 0px -48px;
+}
+.three_two .pic_2 a{
+	background-position: 0px -96px;
+}
+.three_two .pic_3 a{
+	background-position: 0px -146px;
+}
+.three_two .pic_4 a{
+	background-position: 0px -240px;
+}
+.three_three{
+	height: 100%;
+	width: 30%;
+	float: left;
+	/*background: #abcdef;*/
+
+}
+
+.three_three dt{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.three_three input{
+    border: 1px solid #999;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 5px 5px 18px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    font-family: "tradegothic";
+}
+.header-expanded span.error {
+    top: 30px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+    z-index: 0;
+    line-height: 40px;
+}
+
+.three_three .verifycode {
+    width: 47.61%;
+    margin-right: 4.78%;
+    float: left;
+}
+.three_three  dd {
+    /*line-height: 38px;*/
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    max-height: 40px;
+}
+.three_three #ver{
+	margin-bottom: 12px;
+}
+.change{
+	display: block;
+    text-align: right;
+    color: #000;
+    text-decoration: underline;
+    /*height: 25px;*/
+    margin: 0;
+    line-height: 12px;
+    color: #000;
+}
+.three_three .login-login{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    margin-top: -11px;
+}
+.three_three .login-login i{
+    background: url(../img/sprites_header_footer.png) no-repeat scroll -10px -164px transparent;
+    width: 15px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+.three_three .login-login:hover {
+    -webkit-transition-duration: .3s;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #999;
+}
+.three_three .login-login:hover i{
+    -webkit-transition-duration: .3s;
+    background-position: -43px -164px;
+}
+
+.keeplogin {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 30px;
+    width: auto;
+}
+.keeplogin span{
+    background: url(../img/cart-sprite1.png) no-repeat scroll -3px -181px transparent;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #000;
+    margin-top: 0;
+    border: 1px solid #b7b7b7;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: 2px;
+}
+
+
+.forgetpassword{
+    color: #000;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    text-align: right;
+    text-decoration: underline;
+    width: auto;
+}
+
+
+
+
+/*注册*/
+.header-expanded span {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 18px;
+    z-index: 0;
+}
+.header-expanded .header-expanded-content {
+    max-width: 1000px;
+    padding: 40px 0;
+    height: 317px;
+    margin: 0 auto;
+    /*display: none;*/
+}
+.header-expanded .registration {
+    width: 100%;
+    position: relative;
+}
+.header-expanded dl {
+    float: left;
+    height: 100%;
+    display: block;
+}
+.header-expanded .registration dd {
+    width: 100%;
+    float: left;
+}
+
+.header-expanded .registration li {
+    font-size: 13px;
+    line-height: 20px;
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+.header-expanded input {
+    background-color: #fff;
+}
+.header-expanded .registration .labelbox {
+    line-height: 40px;
+    margin: 10px 0 25px 0;
+    max-height: 40px;
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+}
+.header-expanded input {
+    border: 1px solid #999;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 5px 5px 18px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    font-family: "tradegothic";
+}
+.registration .mg0{
+	margin-right: 0 !important;
+}
+
+.gender span {
+    background: url(../img/cart-sprite1.png) no-repeat scroll -20px -181px transparent;
+    border: 2px solid #000;
+    width: 18px;
+    height: 18px;
+    margin-top: -10px;
+}
+
+.header-expanded .registration .gender {
+    color: #000;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+    text-indent: 30px;
+    width: 50%;
+    position: relative;
+}
+.header-expanded .registration .gender span {
+    border: 1px solid #999;
+    height: 14px;
+    left: 0;
+    position: absolute;
+    width: 14px;
+    top: 50%;
+    margin-top: -7px;
+}
+.selectbox:before {
+    background: url(../img/selectbg.png) no-repeat scroll center center #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    content: "";
+    display: block;
+    height: 100%;
+    right: -1px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    cursor: pointer;
+}
+.registration .labelbox .selectbox {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5%;
+    overflow: hidden;
+    width: 30%;
+    position: relative;
+}
+.header-expanded span.selectindex {
+    text-align: center;
+}
+.selectindex {
+    display: block;
+    height: 100%;
+    line-height: inherit;
+    padding-right: 30px;
+    position: absolute;
+    left: 0!important;
+    left: 0!important;
+    width: 100%;
+    color: #333!important;
+    box-sizing: border-box;
+}
+.registration .labelbox select {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    line-height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.selectbox select {
+    background: none repeat scroll 0 0 rgba(0,0,0,0);
+    border: medium none;
+    cursor: pointer;
+    font-family: "tradegothic","fzlthjw","微软雅黑","Microsoft YaHei","黑体","SimHei";
+    font-size: 14px;
+    height: 100%;
+    line-height: 38px;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.header-expanded .verifycode {
+    width: 47.61%;
+    margin-right: 4.78%;
+    float: left;
+}
+.header-expanded .LBD_CaptchaImage{
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+    display: block!important;
+    float: left;
+}
+.header-expanded .changeverify {
+    text-align: right;
+    color: #000;
+    text-decoration: underline;
+    height: 25px;
+    margin: 0;
+    line-height: 12px;
+    color: #000;
+}
+.header-expanded .changeverify a {
+    font-size: 14px;
+}
+
+.btn-descption {
+    color: white;
+    text-align: center;
+}
+.btn-send-mobile {
+    height: 100%;
+    display: inline-block;
+    width: 47%;
+    max-width: 142px;
+    min-width: 77px;
+    background-color: #848484;
+    float: left;
+}
+
+
+.hh{
+    width: 298px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.hh .button{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.hh .button span{
+    background: url(../img/sprites_header_footer.png) no-repeat scroll -10px -164px transparent;
+    width: 15px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 175px;
+    margin-top: 28px;
+}
+.hh .button:hover {
+    -webkit-transition-duration: .3s;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #999;
+}
+.hh .button:hover span{
+    -webkit-transition-duration: .3s;
+    background-position: -43px -164px;
+}
+
+
+
+/*性别*/
+/*
+
+#m,#w{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+
+}*/

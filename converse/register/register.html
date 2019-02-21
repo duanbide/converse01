@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/form_au.js"></script>
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<body>
+<div class="header">
+	<div class="header_logo">
+		<a href="https://www.converse.com.cn/index.htm?iid=tplg06012015"><div class="logo"></div></a>
+		<div class="logo_right">
+			<div class="box denglu">
+				<div class="denglu_tit">
+					<a id="down_a" class="a1" href="#">登录</a>
+					<span>/</span>
+					<a id="down_a2" class="a2" href="#">注册</a>
+				</div>
+				<div id="up" class="pic denglu_pic"></div>
+				
+			</div>
+			<div class="box gouwu">
+				<a class="gouwu_tit" href="#">购物车</a>
+				<div class="pic gouwu_pic"></div>	
+			</div>
+			<a class="pic char_pic" href="#"></a>
+			<a class="pic sousuo_pic" href="#"></a>
+			<a class="pic help_pic" href="#"></a>
+			
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div id="dengxia" class="header-expanded" style="display: none;" >
+		<div class="header-expanded-content">
+			<div class="three_one">
+				<p>还未注册？</p>
+				<div class="button" id="">
+					注册账户<i></i>
+				</div>	
+			</div>
+			
+			<dl class="three_two">
+				<dt>您可以直接登录</dt>
+				<dd>
+					<a href="#">
+					
+					</a>
+				</dd>
+				<dd class="pic_2">
+					<a href="#"></a>
+				</dd>
+				<dd class="pic_3">
+					<a href="#"></a>
+				</dd>
+				<dd class="pic_4">
+					<a href="#"></a>
+				</dd>
+			</dl>
+				
+			
+			<dl class="three_three">
+				<form action="#">
+					<dt>已经成为会员</dt>
+					<dd class="accountname">
+						<input type="text" id="loginName" oldmemberemail name="loginName" maxlength="50" value autocomplete="off" placeholder="邮箱/手机号码" class="error" />
+						<span class="error"></span>
+					</dd>
+					<dd class="accountpassword">
+						<input type="password" id="loginPWD" name="loginPWD" value maxlength="12" autocomplete="off" placeholder="账户密码" class="error" />
+						<span class="error"></span>
+					</dd>
+					<dd id="ver">
+						<input class="verifycode" type="text" id="validateCode" placeholder="请输入验证码" />
+						<span class="error"></span>
+						
+						<img src="img/botdetectcaptcha.jpg" />
+
+					</dd>
+					<!-- <dd class="verifyimg" style="float:left;">
+							
+					</dd> -->
+					<a class="change" href="#">换一张</a>
+					<!-- <div class="change"> -->
+						
+					<!-- </div> -->
+					<dd style="margin-top: 15px;">
+						<div style="font-size: 11px;">
+							一旦登录，即表明你同意匡威的
+							<a href="#">法律声明</a>和
+							<a href="#">使用规则</a>
+						</div>
+					</dd>
+					<dd id="btn" class="login-login">
+						登录<i></i>
+					</dd>
+					<dd class="bottombox">
+						<div class="keeplogin">
+							<span></span>
+							记住登录名
+						</div>
+						<div class="forgetpassword">
+							忘记密码？
+						</div>
+					</dd>
+				</form>
+				
+			</dl>
+		</div>
+		
+	</div>
+	<!-- 注册 -->
+	<div id="chuxia" class="header-expanded" style="display: none;" >
+		<div class="header-expanded-content">
+			<dl class="registration">
+				<dd class="register-box">
+					<ul>
+						<li>
+							手机号码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="phone" type="text" placeholder="135xxxx3333" />
+								<span id="spans"  class="error">
+
+								</span>
+							
+
+							</div>
+						</li>
+						<li>
+						邮箱 
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="email" type="text" placeholder="example@converse.com" />
+								<span class="error"></span>
+							
+
+							</div>
+						</li>
+						<!-- <li class="mg0">
+							性别
+							<b style="color: red">*</b>
+							<div class="labelbox">
+								<div class="gender">
+									<span></span>
+									男的
+								</div>
+								<div class="gender">
+									<span></span>
+									女的
+								</div>
+							</div>
+							
+						</li> -->
+						<li class="mg0">
+							性别
+							<b style="color: red;">*</b><br><br>
+							
+								<input id="m" type="radio" name="usersex" checked="checked"
+								style="width: 20px;height: 20px;padding-right: 20px;" />男
+								 <input id="w"  type="radio" name="usersex" style="width: 20px;height: 20px;padding-right: 20px;" />女</li>
+
+
+					</ul>
+				</dd>
+				<dd class="register-box">
+					<ul>
+						<li>
+							输入密码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="mima" type="password" placeholder="密码至少为8位字符" />
+							
+								<span class="error"></span>
+
+							</div>
+						</li>
+						<li>
+							确认密码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input type="password"
+								id="mima2" type="text" placeholder="请再次输入密码" />
+								
+								<span class="error"></span>
+
+							</div>
+						</li>
+					<!-- 	<li class="mg0">
+							生日（年-月-日）
+							<b style="color: red;">*</b>
+							<div class="labelbox birthday-box">
+								<div class="selectbox">
+									<span selectindex>
+										2019
+									</span>
+									<select id="birthday-year">
+										<option value="2019">2019</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+
+
+
+									</select>
+
+								</div>
+								<div class="selectbox">
+									<span selectindex>
+										1
+									</span>
+									<select id="birthday-month">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+
+
+
+
+									</select>
+
+								</div>
+								<div class="selectbox mg0">
+									<span selectindex>
+										1
+									</span>
+									<select id="birthday-date">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+
+
+
+
+									</select>
+
+								</div>
+								
+							</div>
+
+						</li> -->
+
+						<li class="mg0">
+							年龄
+								<b style="color: red;">*</b>
+
+							<input type="text" id="userage" /><br />
+						</li>
+					</ul>
+				</dd>
+				<dd class="register-box">
+					<ul>
+						<li>
+							验证码
+							<b style="color: red;">*</b>
+							<div class="labelbox mgt5">
+								<input id="yanzheng" class="verifycode" type="text" placeholder="请输入验证码" />
+									
+									<span class="error"></span>
+									<img class="LBD_CaptchaImage" src="img/botdetectcaptcha.jpg" alt="">	
+		
+							</div>
+							<div class="changeverify">
+								<a href="">换一张</a>
+							</div>
+
+						</li>
+						<li>
+							短信验证码
+							<b style="color: red;">*</b>
+							<div class="labelbox mgt5">
+								<input class="verifycode" type="text" placeholder="请输入验证码" />
+									
+									<span class="error"></span>
+									<div class="btn-send-mobile">
+								<h5 class="btn-descption">发送短信验证码</h5>
+							</div>
+							</div>
+							
+						</li>
+						<li class="mg0">
+							<div class="hh" style="font-size:11px;">
+								一旦创建账户，即表明你同意匡威的
+								<a href="#">法律声明</a>和
+								<a href="#">使用规则</a>
+								<div class="button" id="btn_re">
+
+									注册账户<span></span>
+								</div>	
+							</div>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		
+	</div>
+
+	<!-- 导航 -->
+	<!-- <div class="nav">
+		<ul class="uls">
+			<li>
+				<a id="man" href="#">男的</a>
+				<p></p>
+
+					
+			</li>
+			<li>
+				<a href="#">女的<p></p></a>
+				
+			</li>
+			<li>
+				<a href="#">儿童<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit1" href="#">型人搭配<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit2" href="#">联名合作款<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit1" href="#">店铺分布<p></p></a>
+				
+			</li>
+		</ul>
+	</div> -->
+</div>
+	
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

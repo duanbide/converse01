@@ -1,0 +1,22 @@
+.kong{
+	height: 80px;
+}
+.commodity-details{
+	width: 100%;
+	height: 1000px;
+	background: #abcdef;
+	position: relative;
+ 
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    margin: 0 auto;
+    background: red;
+}
