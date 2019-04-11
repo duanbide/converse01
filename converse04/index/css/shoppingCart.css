@@ -1,0 +1,49 @@
+/* Create by lixiangxiang*/
+
+.shop{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.conn{
+	width: 1200px;
+	/*height: 400px;*/
+	/*background: #abcdef;*/
+}
+
+.box{
+	display: flex;
+	justify-content:space-around;
+}
+.pi{
+	width: 200px;
+	display: block;
+	margin-bottom: 98px;
+}
+.box1{
+	width: 400px;
+	line-height: 25px;	
+}
+#jiesuan{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#suan{
+	width: 100px;
+	height: 30px;
+	background: #000;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 20px;
+}
+#suan:hover{
+	color: #000;
+	background: #fff;
+}
+
+.int input{
+	width: 20px;
+	height: 20px;
+}

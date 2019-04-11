@@ -1,0 +1,303 @@
+/* Create by lixiangxiang*/
+
+.kong{
+	height: 80px;
+}
+.commodity-details{
+	width: 100%;
+	height: 1130px;
+	/*background: #abcdef;*/
+	position: relative;
+ 
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:120px;
+    bottom:0;
+    margin: 0 auto;
+    /*background: skyblue;*/
+}
+
+
+.tab-wrap {
+    margin-top: 20px;
+}
+.datail-tab-list {
+    float: left;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.datail-tab-list i {
+    background: url(../img/detail/detail.png) no-repeat scroll 0px 0px transparent;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20;
+    left: 0;
+}
+.datail-tab-list div.tab-title>div:first-child span {
+    float: left;
+    text-indent: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+/*2*/
+.datail-tab-list div.tab-title {
+    height: 30px;
+    width: auto;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+}
+.datail-tab-list .favorite i {
+    background-position: 0 -43px;
+}
+
+/*3*/
+.review-rating-stars span {
+    background: url(../img/detail/stars.png) repeat-x scroll 0 0 transparent;
+    width: 0;
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*中间*/
+.datail-product-img{
+    float: left;
+    width: 520px;
+    height: 1000px;
+    position: absolute;
+    left:250px;
+}
+/*title*/
+.namewrapper{
+    width: 520px;
+}
+.datail-product-img .namewrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.datail-product-img h1 {
+    width: 100%;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 37px;
+    font-weight: bold;
+}
+.datail-product-img .product-price {
+    text-align: center;
+    width: 100%;
+    line-height: 37px;
+}
+.datail-product-img .product-price span {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 7px;
+}
+/*图片*/
+.datail-product-img .xiang{
+    width: 450px;
+    height: 450px;
+    
+}
+
+.datail-product-img .list-pic{
+    width:520px;
+    height: 72px;
+    background: #000;
+    position: absolute;
+    top:540px;
+}
+
+
+.product-description {
+    position: absolute;
+    top:600px;
+    margin-top: 20px;
+    text-align: center;
+}
+.product-description li {
+    font-size: 12px;
+    text-align: left;
+    list-style-type: none;
+    line-height: 20px;
+    padding-left: 12px;
+    position: relative;
+}
+.product-description li:before {
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 3px;
+    border-radius: 50%;
+    background: #424242;
+}
+.product-description h3 {
+    font-size: 18px;
+    text-align: left;
+}
+.product-description h3, .product-freight h3 {
+    margin-top: 40px;
+}
+.product-description h3, .product-freight h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+.product-description p {
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+}
+.learn-more-btn {
+    height: 48px;
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px auto 0;
+    cursor: pointer;
+    padding: 0 84px;
+    border: 1px solid #000;
+}
+
+.learn-more-btn:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+
+
+/*右边*/
+.size{
+    float:left;
+    width:200px;
+    height: 500px;
+    position: absolute;
+    left: 800px;
+}
+.suoluetu img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #b7b7b7;
+    margin-bottom: 18px;
+}
+.suoluetu p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.popup-btn i {
+    background: url(../img/account/sprites_account.png) no-repeat scroll -10px -138px transparent;
+    display: inline-block;
+    *display: inline;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+.popup-btn {
+    padding-top: 20px;
+
+}
+.popup-btn span{
+    border-bottom: 2px solid #999;
+    font-size: 14px;
+}
+
+.popup-btn span:hover{
+    color: #999;
+}
+
+
+/*放大镜*/
+#big{
+    background: #333;
+    width: 200px;
+    height: 500px;
+    z-index: 99; 
+    position: absolute; 
+    top:0px;
+    display: none;
+
+}
+
+ .buy a{
+    display: block;
+    margin-top:30px;
+    width: 150px;
+    height: 40px;
+    background: #000;
+    line-height: 40px;
+    text-align: center;
+    color: #fff !important;
+    border:2px solid #999;
+ }
+ .buy a:hover{
+    color: #000;
+    background: #fff;
+
+ }
+
+/*放大镜*/
+
+#small{
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:570px;
+    top:300px;
+    border:1px solid #999;
+    background: url(../img/pr/pr1.png) no-repeat;
+    background-size: 400px 400px;
+    box-sizing: border-box;
+    /*background: #abcdef;*/
+}
+#big{
+    width:200px;
+    height:200px;
+    position: absolute;
+    left:1070px;
+    top:300px;
+    border:1px solid #999;
+    display: none;
+    background: url(../img/pr/pr1.png) no-repeat;
+    background-size:800px 800px;
+    /*background: red;*/
+
+
+}
+#mask{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background: #abcdef;
+    opacity: .4;
+    display: none;
+
+}

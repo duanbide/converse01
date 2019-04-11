@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- /* Create by lixiangxiang*/ -->
+<title>购物车</title>
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" type="text/css" href="css/shoppingCart.css">
+<body>
+<div class="header">
+	<div class="header_logo">
+		<a href="index.html"><div class="logo"></div></a>
+		<div class="logo_right">
+			<div class="box denglu">
+				<div class="denglu_tit">
+					<a id="down_a" class="a1" href="#">登录</a>
+					<span>/</span>
+					<a id="down_a2" class="a2" href="#">注册</a>
+				</div>
+				<div id="up" class="pic denglu_pic"></div>
+				
+			</div>
+			<div class="box gouwu">
+				<a class="gouwu_tit" href="shoppingCart.html">购物车</a>
+				<div class="pic gouwu_pic"></div>	
+			</div>
+			<a class="pic char_pic" href="#"></a>
+			<a class="pic sousuo_pic" href="#"></a>
+			<a class="pic help_pic" href="#"></a>
+			
+		</div>
+	</div>
+	<!-- 登录 -->
+	<div id="dengxia" class="header-expanded" style="display: none; z-index: 200;" >
+		<div class="header-expanded-content">
+			<div class="three_one">
+				<p>还未注册？</p>
+				<div class="button" id="qiehuan">
+					注册账户<i></i>
+				</div>	
+			</div>
+			
+			<dl class="three_two">
+				<dt>您可以直接登录</dt>
+				<dd>
+					<a href="#">
+					
+					</a>
+				</dd>
+				<dd class="pic_2">
+					<a href="#"></a>
+				</dd>
+				<dd class="pic_3">
+					<a href="#"></a>
+				</dd>
+				<dd class="pic_4">
+					<a href="#"></a>
+				</dd>
+			</dl>
+				
+			
+			<dl class="three_three">
+				<form action="#">
+					<dt>已经成为会员</dt>
+					<dd class="accountname">
+						<input type="text" id="loginName" oldmemberemail name="loginName" maxlength="50" value autocomplete="off" placeholder="邮箱/手机号码" class="error" />
+						<span class="error"></span>
+					</dd>
+					<dd class="accountpassword">
+						<input type="password" id="loginPWD" name="loginPWD" value maxlength="12" autocomplete="off" placeholder="账户密码" class="error" />
+						<span class="error"></span>
+					</dd>
+					<dd id="ver">
+						<input class="verifycode" type="text" id="validateCode" placeholder="请输入验证码" />
+						<span class="error"></span>
+						
+						<img src="img/botdetectcaptcha.jpg" />
+
+					</dd>
+					<!-- <dd class="verifyimg" style="float:left;">
+							
+					</dd> -->
+					<a class="change" href="#">换一张</a>
+					<!-- <div class="change"> -->
+						
+					<!-- </div> -->
+					<dd style="margin-top: 15px;">
+						<div style="font-size: 11px;">
+							一旦登录，即表明你同意匡威的
+							<a href="#">法律声明</a>和
+							<a href="#">使用规则</a>
+						</div>
+					</dd>
+					<dd id="btn" class="login-login">
+						登录<i></i>
+					</dd>
+					<dd class="bottombox">
+						<div class="keeplogin">
+							<span></span>
+							记住登录名
+						</div>
+						<div class="forgetpassword">
+							忘记密码？
+						</div>
+					</dd>
+				</form>
+				
+			</dl>
+		</div>
+		
+	</div>
+	<!-- 注册 -->
+	<div id="chuxia" class="header-expanded" style="display: none; " >
+		<div class="header-expanded-content">
+			<dl class="registration">
+				<dd class="register-box">
+					<ul>
+						<li>
+							手机号码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="phone" type="text" placeholder="135xxxx3333" />
+								<span id="spans"  class="error">
+
+								</span>
+							
+
+							</div>
+						</li>
+						<li>
+						邮箱 
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="email" type="text" placeholder="example@converse.com" />
+								<span class="error"></span>
+							
+
+							</div>
+						</li>
+						<!-- <li class="mg0">
+							性别
+							<b style="color: red">*</b>
+							<div class="labelbox">
+								<div class="gender">
+									<span></span>
+									男的
+								</div>
+								<div class="gender">
+									<span></span>
+									女的
+								</div>
+							</div>
+							
+						</li> -->
+						<li class="mg0">
+							性别
+							<b style="color: red;">*</b><br><br>
+							
+								<input id="m" type="radio" name="usersex" checked="checked"
+								style="width: 20px;height: 20px;padding-right: 20px;" />男
+								 <input id="w"  type="radio" name="usersex" style="width: 20px;height: 20px;padding-right: 20px;" />女</li>
+
+
+					</ul>
+				</dd>
+				<dd class="register-box">
+					<ul>
+						<li>
+							输入密码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input id="mima" type="password" placeholder="密码至少为8位字符" />
+							
+								<span class="error"></span>
+
+							</div>
+						</li>
+						<li>
+							确认密码
+							<b style="color: red;">*</b>
+							<div class="labelbox">
+								<input type="password"
+								id="mima2" type="text" placeholder="请再次输入密码" />
+								
+								<span class="error"></span>
+
+							</div>
+						</li>
+
+						<li class="mg0">
+							年龄
+								<b style="color: red;">*</b>
+
+							<input type="text" id="userage" /><br />
+						</li>
+					</ul>
+				</dd>
+				<dd class="register-box">
+					<ul>
+						<li>
+							验证码
+							<b style="color: red;">*</b>
+							<div class="labelbox mgt5">
+								<input id="yanzheng" class="verifycode" type="text" placeholder="请输入验证码" />
+									
+									<span class="error"></span>
+									<img class="LBD_CaptchaImage" src="img/botdetectcaptcha.jpg" alt="">	
+		
+							</div>
+							<div class="changeverify">
+								<a href="">换一张</a>
+							</div>
+
+						</li>
+						<li>
+							短信验证码
+							<b style="color: red;">*</b>
+							<div class="labelbox mgt5">
+								<input class="verifycode" type="text" placeholder="请输入验证码" />
+									
+									<span class="error"></span>
+									<div class="btn-send-mobile">
+								<h5 class="btn-descption">发送短信验证码</h5>
+							</div>
+							</div>
+							
+						</li>
+						<li class="mg0">
+							<div class="hh" style="font-size:11px;">
+								一旦创建账户，即表明你同意匡威的
+								<a href="#">法律声明</a>和
+								<a href="#">使用规则</a>
+								<div class="button" id="btn_re">
+
+									注册账户<span></span>
+								</div>	
+							</div>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		
+	</div>
+
+		<!-- 导航 -->
+	<div class="nav">
+		<ul class="uls">
+			<li>
+				<a id="man" href="#">男的</a>
+				<p></p>
+
+					
+			</li>
+			<li>
+				<a id="woman" href="#">女的<p></p></a>
+				
+			</li>
+			<li>
+				<a id="children" href="#">儿童<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit1" href="#">型人搭配<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit2" href="#">联名合作款<p></p></a>
+				
+			</li>
+			<li>
+				<a class="tit1" href="#">店铺分布<p></p></a>
+				
+			</li>
+		</ul>
+	</div>
+	<!-- man -->
+	<div class="nav_exp" id="man_id">
+		<ul class="lineNav">
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+		</ul>
+	<div class="centerline"></div>
+	<ul class="lineNav">
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+	</ul>
+	</div>
+	<!-- woman -->
+	<div class="nav_exp" id="woman_id">
+		<ul class="lineNav">
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+		</ul>
+	<div class="centerline"></div>
+	<ul class="lineNav">
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/M_B_1jpg.jpg" alt="" />
+					<span>踩的</span>
+				</a>
+			</li>
+			
+	</ul>
+	</div>
+	<!-- children-->
+	<div class="nav_exp" id="children_id">
+		<ul class="lineNav">
+			<li>
+				<a href="#">
+					<img src="img/1-4-v1.jpg" alt="" />
+					<span>(1-4岁）</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/1-4-v1.jpg" alt="" />
+					<span>(1-4岁）</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/1-4-v1.jpg" alt="" />
+					<span>(1-4岁）</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/1-4-v1.jpg" alt="" />
+					<span>(1-4岁）</span>
+				</a>
+			</li>
+			
+		</ul>
+	
+	</div>
+
+</div>
+	
+<div class="kong">
+</div>
+
+
+
+<!-- 第二部分：新品推荐 -->
+<div class="category-title">
+		<h1>购物车</h1>
+</div>
+
+
+
+<!-- 第一部分：商品详情 -->
+<div class="shop">
+	<div class="conn">
+		<div class="floor">
+			<div class="box" id="box">
+				<!-- <img class="pi" src="img/shopingCart/1.png">
+				<div class="box1">
+					<p><span>【男女同款】</span>One Star Leather</p>
+					<h5>型号：164473C001</h5>
+					<h5>颜色：黑色</h5>
+					<h5>尺码：36.5</h5>
+					
+				</div> -->
+				<h3>373.00</h3>
+				<div class="int">
+					<input type="button" class="addcls" value="+">
+					<span>0</span>
+					<input type="button" class="reduceCls" value="-">
+				</div>
+			</div>
+		</div>
+		<div id="jiesuan">
+			<a class="shanchu">删除</a><span> | </span><a href="">移入收藏夹</a>
+			<p>小计(<span id="jianshu" style="margin: 0;"></span>件商品):￥</p>
+			<span id="spanTotalMoney">0</span>
+			<p id="suan">结算</p>
+
+		</div>
+   </div>
+</div>
+
+
+
+
+<div class="footer">
+	<div class="footer_bottom">
+		<ul class="bottom_list">
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+		<div class="bottom_logo"></div>
+		<p class="footer_title">@匡威体育用品（中国）有限公司 保留所有权利&nbsp;&nbsp;&nbsp;&nbsp;    沪ICP备11044134号-2 &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#"><img src="img/beiAn.png" alt="">沪公网安备 31011002001667号&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		<a href="#"><img src="img/business-license.png" alt="">电子营业执照 </a>
+		</p>
+		
+		
+	</div>
+</div>
+
+<div id="live800iconlink" class="livechat">
+	<a href="#">
+		<img src="img/livechat.png" alt="" height="88" width="88" style="cursor:pointer;" />
+	</a>
+</div>
+</body>
+</html>
+
+<script type="text/javascript" src="jss/cssTools.js"></script>
+<script type="text/javascript" src="jss/danRudanChu.js"></script>
+<script type="text/javascript" src="jss/mover1810.js"></script>
+<script type="text/javascript" src="jss/shoppingCatr1.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
